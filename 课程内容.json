@@ -4,7 +4,18 @@
   "description": "",
   "playerPath": "AI大全栈 / AI / LangGraph",
   "resourceUrl": "https://gitee.com/dev-edu/langgraph-python",
-  "skills": ["图", "节点", "边", "状态", "图编译", "通道", "Runnable"],
+  "skills": [
+    "图",
+    "节点",
+    "边",
+    "状态",
+    "图编译",
+    "通道",
+    "Runnable",
+    "阿里云百炼平台",
+    "模型聚合商",
+    "langsmith"
+  ],
   "type": "录播",
   "status": "已上架",
   "catalog": [
@@ -14,6 +25,10 @@
     },
     {
       "title": "langgraph核心概念",
+      "showIndex": true
+    },
+    {
+      "title": "环境搭建",
       "showIndex": true
     }
   ]
