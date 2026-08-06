@@ -1,15 +1,19 @@
 {
-  "title": "Agents应用框架",
+  "title": "LangGraph",
   "author": "袁进",
   "description": "",
-  "playerPath": "AI大全栈 / AI / Agents应用框架",
-  "resourceUrl": "https://gitee.com/dev-edu/agent-framework",
-  "skills": [],
+  "playerPath": "AI大全栈 / AI / LangGraph",
+  "resourceUrl": "https://gitee.com/dev-edu/langgraph-python",
+  "skills": ["图", "节点", "边", "状态", "图编译", "通道", "Runnable"],
   "type": "录播",
   "status": "已上架",
   "catalog": [
     {
       "title": "必看导言",
+      "showIndex": true
+    },
+    {
+      "title": "langgraph核心概念",
       "showIndex": true
     }
   ]
