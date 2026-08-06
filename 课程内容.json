@@ -14,7 +14,9 @@
     "Runnable",
     "阿里云百炼平台",
     "模型聚合商",
-    "langsmith"
+    "langsmith",
+    "langchain model",
+    "model provider"
   ],
   "type": "录播",
   "status": "已上架",
@@ -29,6 +31,10 @@
     },
     {
       "title": "环境搭建",
+      "showIndex": true
+    },
+    {
+      "title": "模型",
       "showIndex": true
     }
   ]
