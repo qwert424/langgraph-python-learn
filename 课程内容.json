@@ -18,7 +18,8 @@
     "langchain model",
     "model provider",
     "多模态消息",
-    "消息模板"
+    "消息模板",
+    "channel reducer"
   ],
   "type": "录播",
   "status": "已上架",
@@ -41,6 +42,10 @@
     },
     {
       "title": "消息",
+      "showIndex": true
+    },
+    {
+      "title": "Reducer",
       "showIndex": true
     }
   ]
