@@ -1,8 +1,8 @@
 {
-  "title": "LangGraph",
+  "title": "LangGraph工作流开发",
   "author": "袁进",
-  "description": "",
-  "playerPath": "AI大全栈 / AI / LangGraph",
+  "description": "本课程深入讲解LangGraph工作流编排框架，帮助开发者构建复杂、可控的Agent流程。从节点与状态管理基础出发，系统讲解CheckPoints持久化、ReAct模式、子反思机制、Human-in-the-loop人机协同等核心机制，并覆盖短期记忆与长期记忆管理、会话线程、时间旅行等高级特性。课程进一步拓展到动态分叉（Fan-out/Fan-in）、Map-Reduce并行模式、Agent Supervisor监管模式、条件路由与图编译优化，结合LangSmith调试追踪与自定义Tool节点开发，打造生产级Agent工作流系统。",
+  "playerPath": "AI大全栈 / AI / LangGraph工作流开发",
   "resourceUrl": "https://gitee.com/dev-edu/langgraph-python",
   "skills": [
     "图",
@@ -16,7 +16,9 @@
     "模型聚合商",
     "langsmith",
     "langchain model",
-    "model provider"
+    "model provider",
+    "多模态消息",
+    "消息模板"
   ],
   "type": "录播",
   "status": "已上架",
@@ -35,6 +37,10 @@
     },
     {
       "title": "模型",
+      "showIndex": true
+    },
+    {
+      "title": "消息",
       "showIndex": true
     }
   ]
