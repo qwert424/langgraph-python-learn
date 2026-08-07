@@ -23,7 +23,11 @@
     "Agent Server",
     "langgraph cli",
     "langsmith Studio",
-    "Agent Chat"
+    "Agent Chat",
+    "超步",
+    "并发节点",
+    "条件边",
+    "循环图"
   ],
   "type": "录播",
   "status": "已上架",
@@ -54,6 +58,10 @@
     },
     {
       "title": "Agent Server",
+      "showIndex": true
+    },
+    {
+      "title": "超步",
       "showIndex": true
     }
   ]
