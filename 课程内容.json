@@ -19,7 +19,11 @@
     "model provider",
     "多模态消息",
     "消息模板",
-    "channel reducer"
+    "channel reducer",
+    "Agent Server",
+    "langgraph cli",
+    "langsmith Studio",
+    "Agent Chat"
   ],
   "type": "录播",
   "status": "已上架",
@@ -46,6 +50,10 @@
     },
     {
       "title": "Reducer",
+      "showIndex": true
+    },
+    {
+      "title": "Agent Server",
       "showIndex": true
     }
   ]

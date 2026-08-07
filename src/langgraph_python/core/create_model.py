@@ -12,4 +12,6 @@ def create_model(
     provider: Provider = "anthropic",
     **kwargs,
 ):
+    if provider == "anthropic":
+        kwargs.setdefault("thinking", {"type": "enabled"})
     return init_chat_model(model=model_name, model_provider=provider, **kwargs)
