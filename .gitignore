@@ -30,3 +30,6 @@ sessions
 
 # langgraph
 .langgraph_api
+
+# opencode
+opencode.jsonc
