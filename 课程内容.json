@@ -33,7 +33,8 @@
     "快照 Snapshot",
     "存储器",
     "ToolNode",
-    "Fake Model"
+    "Fake Model",
+    "部署模式"
   ],
   "type": "录播",
   "status": "已上架",
@@ -80,6 +81,10 @@
     },
     {
       "title": "Mock Model",
+      "showIndex": true
+    },
+    {
+      "title": "部署模式和学习重心",
       "showIndex": true
     }
   ]
