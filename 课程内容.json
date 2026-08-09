@@ -32,7 +32,8 @@
     "线程 Thread",
     "快照 Snapshot",
     "存储器",
-    "ToolNode"
+    "ToolNode",
+    "Fake Model"
   ],
   "type": "录播",
   "status": "已上架",
@@ -75,6 +76,10 @@
     },
     {
       "title": "工具节点",
+      "showIndex": true
+    },
+    {
+      "title": "Mock Model",
       "showIndex": true
     }
   ]
