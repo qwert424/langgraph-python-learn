@@ -21,5 +21,11 @@ class AnthropicSettings(BaseSettingsWithEnv):
     model_config = {"env_prefix": "ANTHROPIC_"}
 
 
+class TavilySettings(BaseSettingsWithEnv):
+    api_key: str = ""
+    model_config = {"env_prefix": "TAVILY_"}
+
+
 openai_settings = OpenAISettings()
 anthropic_settings = AnthropicSettings()
+tavily_settings = TavilySettings()

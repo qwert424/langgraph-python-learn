@@ -31,7 +31,8 @@
     "检查点 CheckPointer",
     "线程 Thread",
     "快照 Snapshot",
-    "存储器"
+    "存储器",
+    "ToolNode"
   ],
   "type": "录播",
   "status": "已上架",
@@ -70,6 +71,10 @@
     },
     {
       "title": "线程和检查点",
+      "showIndex": true
+    },
+    {
+      "title": "工具节点",
       "showIndex": true
     }
   ]

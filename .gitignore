@@ -30,6 +30,7 @@ sessions
 
 # langgraph
 .langgraph_api
+langgraph-api.yaml
 
 # opencode
 opencode.jsonc

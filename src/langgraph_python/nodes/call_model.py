@@ -8,6 +8,7 @@ from langgraph_python.core.create_model import create_model
 from langgraph_python.states.core_agent_state import CoreAgentState
 from langgraph_python.states.model_config import ModelConfig
 from langgraph_python.templates import prompt_from_filename
+from langgraph_python.tools import tools
 
 
 def _is_git(cwd: str) -> bool:
@@ -46,5 +47,6 @@ async def call_model(state: CoreAgentState) -> dict:
     template_name = state.get("system_prompt_template", "system")
     system_message = _build_system_message(template_name)
     model = create_model(**model_config.to_kwargs())
-    response = await model.ainvoke([system_message, *messages])
+    model_with_tools = model.bind_tools(tools)
+    response = await model_with_tools.ainvoke([system_message, *messages])
     return {"messages": [response]}
