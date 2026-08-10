@@ -9,6 +9,7 @@ dependencies = [
     "langchain-openai==1.4.1",
     "langgraph==1.2.10",
     "langgraph-cli[inmem]==0.4.31",
+    "langgraph-sdk==0.4.2",
     "pydantic==2.13.4",
     "pydantic-settings==2.14.1",
     "tavily-python==0.7.26",

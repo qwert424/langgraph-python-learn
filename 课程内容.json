@@ -41,7 +41,8 @@
     "工具遮蔽",
     "动态系统提示词",
     "Runtime",
-    "Runtime Context"
+    "Runtime Context",
+    "Assistant API"
   ],
   "type": "录播",
   "status": "已上架",
@@ -108,6 +109,10 @@
     },
     {
       "title": "Runtime",
+      "showIndex": true
+    },
+    {
+      "title": "Assistant API",
       "showIndex": true
     }
   ]
