@@ -35,5 +35,5 @@ langgraph-api.yaml
 # opencode
 opencode.jsonc
 
-# .vscode
-.vscode
+# vscode
+.vscode/settings.json

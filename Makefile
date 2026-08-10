@@ -1,4 +1,7 @@
-.PHONY: course course-push
+.PHONY: debug course course-push
+
+debug:
+	langgraph dev --debug-port 5678
 
 course:
 	uv run python scripts/course.py

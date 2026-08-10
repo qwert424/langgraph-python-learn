@@ -34,7 +34,8 @@
     "存储器",
     "ToolNode",
     "Fake Model",
-    "部署模式"
+    "部署模式",
+    "断点调试"
   ],
   "type": "录播",
   "status": "已上架",
@@ -85,6 +86,10 @@
     },
     {
       "title": "部署模式和学习重心",
+      "showIndex": true
+    },
+    {
+      "title": "断点调试",
       "showIndex": true
     }
   ]
