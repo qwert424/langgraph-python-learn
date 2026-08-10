@@ -1,50 +1,52 @@
-import os
-import subprocess
-from typing import Any
-
 from langchain_core.messages import SystemMessage
+from langchain_core.runnables import RunnableConfig, ensure_config
 
 from langgraph_python.core.create_model import create_model
+from langgraph_python.core.mock_model import mock_model
 from langgraph_python.states.core_agent_state import CoreAgentState
-from langgraph_python.templates import prompt_from_filename
-from langgraph_python.tools import tools
+from langgraph_python.tools import get_tools, tools
 
 
-def _is_git(cwd: str) -> bool:
-    result = subprocess.run(
-        ["git", "-C", cwd, "rev-parse", "--is-inside-work-tree"],
-        capture_output=True,
-        text=True,
-    )
-    return result.returncode == 0
+def _get_system_prompts(config: RunnableConfig):
+    "根据配置获取系统提示词"
+    system_msgs = []
+    configurable = config.get("configurable") or {}
+    system_prompt = configurable.get("system_prompt")
+    if system_prompt:
+        system_msgs.append(SystemMessage(system_prompt))
+    return system_msgs
 
 
-def _environment_info() -> dict[str, Any]:
-    cwd = os.getcwd()
-    return {
-        "cwd": cwd,
-        "os": os.name,
-        "is_git": _is_git(cwd),
-    }
+def _get_model(config: RunnableConfig):
+    "根据配置获取模型对象"
+    configurable = config.get("configurable") or {}
+    model = configurable.get("model")
+    if model == "fake":
+        return mock_model()
+    else:
+        return create_model()
 
 
-# 系统提示词名称 -> 需要注入的信息
-_SYSTEM_PROMPT_TEMPLATES: dict[str, dict[str, Any]] = {"system": _environment_info()}
+def _get_tools(config: RunnableConfig):
+    "根据配置获取工具列表，未配置时返回全部工具"
+    configurable = config.get("configurable") or {}
+    tool_names = configurable.get("tools")
+    if tool_names:
+        return get_tools(tool_names)
+    return tools
 
 
-def _build_system_message(template_name: str) -> SystemMessage:
-    data = _SYSTEM_PROMPT_TEMPLATES[template_name]
-    return SystemMessage(
-        content=prompt_from_filename(template_name, data),
-    )
-
-
-async def call_model(state: CoreAgentState) -> dict:
+async def call_model(state: CoreAgentState, config: RunnableConfig) -> dict:
     """调用模型节点"""
-    messages = state["messages"]  # 取出messages，不包含系统提示词
-    template_name = state.get("system_prompt_template", "system")
-    system_message = _build_system_message(template_name)
-    model = create_model()
-    model_with_tools = model.bind_tools(tools)
-    response = await model_with_tools.ainvoke([system_message, *messages])
+    messages = state["messages"]
+    # 根据配置获取模型对象
+    model = _get_model(config)
+    # 根据配置读取系统提示词
+    system_prompts = _get_system_prompts(config)
+    # 根据配置获取工具列表
+    active_tools = _get_tools(config)
+    model_with_tools = model.bind_tools(active_tools)
+
+    # 调用模型
+    response = await model_with_tools.ainvoke([*system_prompts, *messages])
     return {"messages": [response]}

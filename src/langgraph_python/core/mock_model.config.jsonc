@@ -52,7 +52,7 @@
     {
       // 收到工具结果 -> 最多连查 2 次再收手
       "when": { "last_message": "tool_result" },
-      "max_tool_calls": 2,
+      "max_tool_calls": 5,
       "respond": {
         "reasoning": "需要再次调用工具获取更多数据。",
         "tool_calls": [

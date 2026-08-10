@@ -8,5 +8,3 @@ class CoreAgentState(TypedDict):
 
     # 消息列表，使用 add_messages reducer 自动累积
     messages: Required[Annotated[list[BaseMessage], add_messages]]
-    # 系统提示词模板名称，选填，默认 system
-    system_prompt_template: NotRequired[str]
