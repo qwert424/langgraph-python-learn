@@ -34,3 +34,6 @@ langgraph-api.yaml
 
 # opencode
 opencode.jsonc
+
+# .vscode
+.vscode
