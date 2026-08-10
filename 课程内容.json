@@ -39,7 +39,9 @@
     "RunnableConfig",
     "动态切换模型配置",
     "工具遮蔽",
-    "动态系统提示词"
+    "动态系统提示词",
+    "Runtime",
+    "Runtime Context"
   ],
   "type": "录播",
   "status": "已上架",
@@ -102,6 +104,10 @@
     },
     {
       "title": "RunnableConfig",
+      "showIndex": true
+    },
+    {
+      "title": "Runtime",
       "showIndex": true
     }
   ]
