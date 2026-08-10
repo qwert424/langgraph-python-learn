@@ -35,7 +35,9 @@
     "ToolNode",
     "Fake Model",
     "部署模式",
-    "断点调试"
+    "断点调试",
+    "RunnableConfig",
+    "动态切换模型配置"
   ],
   "type": "录播",
   "status": "已上架",
@@ -90,6 +92,10 @@
     },
     {
       "title": "断点调试",
+      "showIndex": true
+    },
+    {
+      "title": "模型配置的动态切换",
       "showIndex": true
     }
   ]
