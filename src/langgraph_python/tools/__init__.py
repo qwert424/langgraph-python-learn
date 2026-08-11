@@ -1,12 +1,14 @@
 from langchain_core.tools import BaseTool
 
-from .time import get_current_time
-from .web import fetch_url, web_search
+from langgraph_python.tools.time import get_current_time
+from langgraph_python.tools.web import fetch_url, web_search
+from langgraph_python.tools.sub_agent import call_sub_agent
 
 _AVAILABLE_TOOLS: dict[str, BaseTool] = {
     "fetch_url": fetch_url,
     "web_search": web_search,
     "get_current_time": get_current_time,
+    "call_sub_agent": call_sub_agent,
 }
 
 tools: list[BaseTool] = list(_AVAILABLE_TOOLS.values())

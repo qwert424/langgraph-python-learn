@@ -42,7 +42,8 @@
     "动态系统提示词",
     "Runtime",
     "Runtime Context",
-    "Assistant API"
+    "Assistant API",
+    "Sub Agent"
   ],
   "type": "录播",
   "status": "已上架",
@@ -113,6 +114,10 @@
     },
     {
       "title": "Assistant API",
+      "showIndex": true
+    },
+    {
+      "title": "子图",
       "showIndex": true
     }
   ]
