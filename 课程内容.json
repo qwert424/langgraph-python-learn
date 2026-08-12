@@ -43,7 +43,9 @@
     "Runtime",
     "Runtime Context",
     "Assistant API",
-    "Sub Agent"
+    "Sub Agent",
+    "Thread API",
+    "线程清理模式"
   ],
   "type": "录播",
   "status": "已上架",
@@ -118,6 +120,10 @@
     },
     {
       "title": "子图",
+      "showIndex": true
+    },
+    {
+      "title": "Thread API",
       "showIndex": true
     }
   ]
