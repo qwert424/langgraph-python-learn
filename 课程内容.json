@@ -45,7 +45,9 @@
     "Assistant API",
     "Sub Agent",
     "Thread API",
-    "线程清理模式"
+    "线程清理模式",
+    "Run API",
+    "运行状态"
   ],
   "type": "录播",
   "status": "已上架",
@@ -124,6 +126,10 @@
     },
     {
       "title": "Thread API",
+      "showIndex": true
+    },
+    {
+      "title": "Run API",
       "showIndex": true
     }
   ]

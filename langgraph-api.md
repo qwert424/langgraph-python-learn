@@ -33,14 +33,14 @@
 | GET /threads/{thread_id}/stream | 加入线程流 | 🔴 |
 | POST /threads/{thread_id}/stream/events | 协议v2事件流 | 🔴 |
 | POST /threads/{thread_id}/commands | 协议v2命令 | 🔴 |
-| GET /threads/{thread_id}/runs | 列出运行 | 🔴 |
-| POST /threads/{thread_id}/runs | 创建后台运行 | 🔴 |
+| GET /threads/{thread_id}/runs | 列出运行 | 🟢 |
+| POST /threads/{thread_id}/runs | 创建后台运行 | 🟠 |
 | POST /threads/{thread_id}/runs/crons | 创建线程定时任务 | 🔴 |
 | POST /threads/{thread_id}/runs/stream | 创建运行并流式输出 | 🔴 |
-| POST /threads/{thread_id}/runs/wait | 创建运行并等待输出 | 🔴 |
-| GET /threads/{thread_id}/runs/{run_id} | 获取运行 | 🔴 |
-| DELETE /threads/{thread_id}/runs/{run_id} | 删除运行 | 🔴 |
-| GET /threads/{thread_id}/runs/{run_id}/join | 等待运行完成 | 🔴 |
+| POST /threads/{thread_id}/runs/wait | 创建运行并等待输出 | 🟠 |
+| GET /threads/{thread_id}/runs/{run_id} | 获取运行 | 🟢 |
+| DELETE /threads/{thread_id}/runs/{run_id} | 删除运行 | 🟢 |
+| GET /threads/{thread_id}/runs/{run_id}/join | 等待运行完成 | 🟢 |
 | GET /threads/{thread_id}/runs/{run_id}/stream | 加入运行流 | 🔴 |
 | POST /threads/{thread_id}/runs/{run_id}/cancel | 取消运行 | 🔴 |
 | POST /runs/crons | 创建定时任务 | 🔴 |
@@ -50,9 +50,9 @@
 | PATCH /runs/crons/{cron_id} | 更新定时任务 | 🔴 |
 | DELETE /runs/crons/{cron_id} | 删除定时任务 | 🔴 |
 | POST /runs/stream | 创建运行并流式输出 | 🔴 |
-| POST /runs/wait | 创建运行并等待输出 | 🔴 |
-| POST /runs | 创建后台运行 | 🔴 |
-| POST /runs/batch | 批量创建运行 | 🔴 |
+| POST /runs/wait | 创建运行并等待输出 | 🟢 |
+| POST /runs | 创建后台运行 | 🟢 |
+| POST /runs/batch | 批量创建运行 | 🟢 |
 | POST /runs/cancel | 取消运行 | 🔴 |
 | PUT /store/items | 存储或更新条目 | 🔴 |
 | DELETE /store/items | 删除条目 | 🔴 |
@@ -67,5 +67,4 @@
 | GET /metrics | 系统指标 | 🔴 |
 | GET /docs | API文档 | 🔴 |
 | GET /ok | 健康检查 | 🔴 |
-
 
