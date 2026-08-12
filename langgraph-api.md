@@ -60,9 +60,9 @@
 | POST /store/items/search | 搜索或列出条目 | 🔴 |
 | POST /store/namespaces | 列出命名空间 | 🔴 |
 | POST /a2a/{assistant_id} | A2A协议通信 | 🔴 |
-| POST /mcp/ | MCP协议请求 | 🔴 |
-| GET /mcp/ | MCP协议流式 | 🔴 |
-| DELETE /mcp/ | 终止会话 | 🔴 |
+| POST /mcp/ | MCP协议请求 | 🟢 |
+| GET /mcp/ | MCP协议流式 | 🟢 |
+| DELETE /mcp/ | 终止会话 | 🟢 |
 | GET /info | 服务器信息 | 🟢 |
 | GET /metrics | 系统指标 | 🟢 |
 | GET /docs | API文档 | 🟢 |
