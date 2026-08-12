@@ -48,7 +48,8 @@
     "线程清理模式",
     "Run API",
     "运行状态",
-    "Cron API"
+    "Cron API",
+    "System API"
   ],
   "type": "录播",
   "status": "已上架",
@@ -135,6 +136,10 @@
     },
     {
       "title": "Cron API",
+      "showIndex": true
+    },
+    {
+      "title": "System API",
       "showIndex": true
     }
   ]
