@@ -32,9 +32,9 @@ def _get_model(context: ContextSchema):
 
 def _get_tools(context: ContextSchema) -> list[BaseTool]:
     "根据 Context 获取工具列表，未配置时返回全部工具"
-    if context and context.tools:
-        return get_tools(context.tools)
-    return tools
+    if context is None or context.tools is None:
+        return tools
+    return get_tools(context.tools)
 
 
 def _get_model_config(context: ContextSchema) -> RunnableConfig:
