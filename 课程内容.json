@@ -53,7 +53,8 @@
     "使用MCP暴露Agent服务",
     "时间旅行",
     "replay模式",
-    "fork模式"
+    "fork模式",
+    "手动错误重试"
   ],
   "type": "录播",
   "status": "已上架",
@@ -152,6 +153,10 @@
     },
     {
       "title": "时间旅行",
+      "showIndex": true
+    },
+    {
+      "title": "手动错误重试",
       "showIndex": true
     }
   ]
