@@ -50,7 +50,10 @@
     "运行状态",
     "Cron API",
     "System API",
-    "使用MCP暴露Agent服务"
+    "使用MCP暴露Agent服务",
+    "时间旅行",
+    "replay模式",
+    "fork模式"
   ],
   "type": "录播",
   "status": "已上架",
@@ -145,6 +148,10 @@
     },
     {
       "title": "MCP API",
+      "showIndex": true
+    },
+    {
+      "title": "时间旅行",
       "showIndex": true
     }
   ]
