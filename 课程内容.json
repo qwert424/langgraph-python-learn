@@ -58,7 +58,11 @@
     "容错机制",
     "超时策略",
     "重试策略",
-    "错误兜底"
+    "错误兜底",
+    "Command",
+    "update原语",
+    "goto原语",
+    "graph原语"
   ],
   "type": "录播",
   "status": "已上架",
@@ -165,6 +169,10 @@
     },
     {
       "title": "容错机制",
+      "showIndex": true
+    },
+    {
+      "title": "Command",
       "showIndex": true
     }
   ]

@@ -17,7 +17,7 @@ def should_continue(state: CoreAgentState) -> str:
 
 def error_handler(state: CoreAgentState, error: NodeError):
     msg = f"{error.node}节点发生了错误：{error.error}"
-    return {"messages": [AIMessage(msg)]}
+    return Command(update={"messages": [AIMessage(msg)]}, goto=END)
 
 
 def build_graph():
