@@ -20,7 +20,7 @@
 | POST /threads/search | 搜索线程 | 🟢 |
 | POST /threads/count | 统计线程数量 | 🟢 |
 | POST /threads/prune | 清理线程 | 🟢 |
-| GET /threads/{thread_id}/state | 获取线程状态 | 🟠 |
+| GET /threads/{thread_id}/state | 获取线程状态 | 🟢 |
 | POST /threads/{thread_id}/state | 更新线程状态 | 🟢 |
 | GET /threads/{thread_id}/state/{checkpoint_id} | 获取指定检查点状态 | 🟢 |
 | POST /threads/{thread_id}/state/checkpoint | 获取指定检查点状态 | 🟢 |
