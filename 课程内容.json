@@ -68,7 +68,8 @@
     "人在回路 HITL",
     "dynamic fan-out",
     "map-reduce 模式",
-    "send"
+    "send",
+    "运行取消"
   ],
   "type": "录播",
   "status": "已上架",
@@ -191,6 +192,10 @@
     },
     {
       "title": "动态扇出",
+      "showIndex": true
+    },
+    {
+      "title": "运行取消",
       "showIndex": true
     }
   ]

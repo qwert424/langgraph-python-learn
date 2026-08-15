@@ -22,7 +22,7 @@
   //   { "type": "error", "message": "..." }          -> 主动抛异常（测 retry）
   //   { "type": "echo_image", "text": "..." }        -> 回显输入里最后一张图
   "responses": [
-    { "type": "error", "message": "错误1" },
+    // { "type": "error", "message": "错误1" },
     // { "type": "error", "message": "错误2" },
     {
       "reasoning": "我应该按照模拟的配置返回给用户消息",
