@@ -65,7 +65,10 @@
     "graph原语",
     "中断",
     "中断的恢复",
-    "人在回路 HITL"
+    "人在回路 HITL",
+    "dynamic fan-out",
+    "map-reduce 模式",
+    "send"
   ],
   "type": "录播",
   "status": "已上架",
@@ -184,6 +187,10 @@
     },
     {
       "title": "人在回路",
+      "showIndex": true
+    },
+    {
+      "title": "动态扇出",
       "showIndex": true
     }
   ]

@@ -1,7 +1,8 @@
 {
   "dependencies": ["."],
   "graphs": {
-    "agent": "langgraph_python.dev:agent"
+    "agent": "langgraph_python.dev:agent",
+    "dynamic_fanout_graph": "langgraph_python.dev:dynamic_fanout_graph"
   },
   "env": ".env"
 }
