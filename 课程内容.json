@@ -64,7 +64,8 @@
     "goto原语",
     "graph原语",
     "中断",
-    "中断的恢复"
+    "中断的恢复",
+    "人在回路 HITL"
   ],
   "type": "录播",
   "status": "已上架",
@@ -179,6 +180,10 @@
     },
     {
       "title": "中断",
+      "showIndex": true
+    },
+    {
+      "title": "人在回路",
       "showIndex": true
     }
   ]

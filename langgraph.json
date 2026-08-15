@@ -1,13 +1,7 @@
 {
   "dependencies": ["."],
   "graphs": {
-    "agent": "langgraph_python.dev:agent",
-    "parallel_graph": "langgraph_python.dev:parallel_graph",
-    "branch_graph": "langgraph_python.dev:branch_graph",
-    "loop_graph": "langgraph_python.dev:loop_graph",
-    "interrupt_graph": "langgraph_python.dev:interrupt_graph",
-    "interrupt_parallel_graph": "langgraph_python.dev:interrupt_parallel_graph",
-    "subgraph_interrupt_graph": "langgraph_python.dev:subgraph_interrupt_graph"
+    "agent": "langgraph_python.dev:agent"
   },
   "env": ".env"
 }
