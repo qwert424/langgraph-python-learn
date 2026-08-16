@@ -34,10 +34,10 @@
 | POST /threads/{thread_id}/stream/events | 协议v2事件流 | 🔴 |
 | POST /threads/{thread_id}/commands | 协议v2命令 | 🔴 |
 | GET /threads/{thread_id}/runs | 列出运行 | 🟢 |
-| POST /threads/{thread_id}/runs | 创建后台运行 | 🟠 |
+| POST /threads/{thread_id}/runs | 创建后台运行 | 🟢 |
 | POST /threads/{thread_id}/runs/crons | 创建线程定时任务 | 🟢 |
 | POST /threads/{thread_id}/runs/stream | 创建运行并流式输出 | 🔴 |
-| POST /threads/{thread_id}/runs/wait | 创建运行并等待输出 | 🟠 |
+| POST /threads/{thread_id}/runs/wait | 创建运行并等待输出 | 🟢 |
 | GET /threads/{thread_id}/runs/{run_id} | 获取运行 | 🟢 |
 | DELETE /threads/{thread_id}/runs/{run_id} | 删除运行 | 🟢 |
 | GET /threads/{thread_id}/runs/{run_id}/join | 等待运行完成 | 🟢 |

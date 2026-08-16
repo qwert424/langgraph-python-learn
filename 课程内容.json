@@ -69,7 +69,8 @@
     "dynamic fan-out",
     "map-reduce 模式",
     "send",
-    "运行取消"
+    "运行取消",
+    "多任务策略"
   ],
   "type": "录播",
   "status": "已上架",
@@ -196,6 +197,10 @@
     },
     {
       "title": "运行取消",
+      "showIndex": true
+    },
+    {
+      "title": "多任务策略",
       "showIndex": true
     }
   ]

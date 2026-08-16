@@ -6,10 +6,10 @@
   "mode": "cycle",
 
   // sleep: 首个 token 产出之前的等待秒数（invoke 和 stream 都生效，可模拟模型思考/卡顿）
-  "sleep": 0,
+  "sleep": 10,
 
   // token_sleep: 每个 token 之间的间隔秒数（invoke 按总时长等额生效，stream 逐字生效）
-  "token_sleep": 2,
+  "token_sleep": 0,
 
   // responses: 剧本式回复列表（一回合一条 AIMessage）。
   // 只有 rules 里的规则都没命中时才会回退到这里。
