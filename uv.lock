@@ -1158,7 +1158,7 @@ wheels = [
 
 [[package]]
 name = "langgraph-api"
-version = "0.12.0"
+version = "0.12.4"
 source = { registry = "https://pypi.tuna.tsinghua.edu.cn/simple" }
 dependencies = [
     { name = "cloudpickle" },
@@ -1196,9 +1196,9 @@ dependencies = [
     { name = "websockets" },
     { name = "zstandard" },
 ]
-sdist = { url = "https://pypi.tuna.tsinghua.edu.cn/packages/85/5a/6a8b649eb457e798355826ba278146707fe04a0f336e9275668ff283acaf/langgraph_api-0.12.0.tar.gz", hash = "sha256:081befd689f94b28d2e8e608a7138eadd54e70e1b580379086dbfcf39ef2cf0b", size = 759830, upload-time = "2026-08-05T02:34:35.513Z" }
+sdist = { url = "https://pypi.tuna.tsinghua.edu.cn/packages/ba/3b/9c5b4717ac7e62ecacad524f57a328efcdd87492fbc1250a5ba232282ddd/langgraph_api-0.12.4.tar.gz", hash = "sha256:9cd7efedf030aaffc4456cd9ed7c516315950c7dfbb2590bed0c58e69fef723e", size = 760765, upload-time = "2026-08-13T04:43:29.041Z" }
 wheels = [
-    { url = "https://pypi.tuna.tsinghua.edu.cn/packages/75/1f/99376a2c96331c8cc368a55e66d5e9000736d5b11913a0b5c606b8c42668/langgraph_api-0.12.0-py3-none-any.whl", hash = "sha256:092422be8408f6d3521413697dd213888cf178f4928e54a551d6c9c4d4e78310", size = 615122, upload-time = "2026-08-05T02:34:34.086Z" },
+    { url = "https://pypi.tuna.tsinghua.edu.cn/packages/ae/2d/c24cf7f3b522c5df1494eaf13df563656c423dec7d31e34c5d9cb7cf7885/langgraph_api-0.12.4-py3-none-any.whl", hash = "sha256:ac8b23748a27a6a3459cfa404a7d5f9445d6e064c598fc087e0d74df3058bad3", size = 616005, upload-time = "2026-08-13T04:43:27.48Z" },
 ]
 
 [[package]]
@@ -1258,6 +1258,7 @@ dependencies = [
     { name = "langchain-anthropic" },
     { name = "langchain-openai" },
     { name = "langgraph" },
+    { name = "langgraph-api" },
     { name = "langgraph-cli", extra = ["inmem"] },
     { name = "langgraph-sdk" },
     { name = "pydantic" },
@@ -1279,6 +1280,7 @@ requires-dist = [
     { name = "langchain-anthropic", specifier = "==1.5.3" },
     { name = "langchain-openai", specifier = "==1.4.1" },
     { name = "langgraph", specifier = "==1.2.10" },
+    { name = "langgraph-api", specifier = "==0.12.4" },
     { name = "langgraph-cli", extras = ["inmem"], specifier = "==0.4.31" },
     { name = "langgraph-sdk", specifier = "==0.4.2" },
     { name = "pydantic", specifier = "==2.13.4" },

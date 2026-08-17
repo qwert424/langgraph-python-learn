@@ -70,7 +70,8 @@
     "map-reduce 模式",
     "send",
     "运行取消",
-    "多任务策略"
+    "多任务策略",
+    "事件流"
   ],
   "type": "录播",
   "status": "已上架",
@@ -201,6 +202,10 @@
     },
     {
       "title": "多任务策略",
+      "showIndex": true
+    },
+    {
+      "title": "事件流",
       "showIndex": true
     }
   ]
