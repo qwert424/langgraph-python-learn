@@ -71,7 +71,8 @@
     "send",
     "运行取消",
     "多任务策略",
-    "事件流"
+    "事件流",
+    "Store"
   ],
   "type": "录播",
   "status": "已上架",
@@ -206,6 +207,10 @@
     },
     {
       "title": "事件流",
+      "showIndex": true
+    },
+    {
+      "title": "Store",
       "showIndex": true
     }
   ]

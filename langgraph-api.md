@@ -51,11 +51,11 @@
 | POST /runs | 创建后台运行 | 🟢 |
 | POST /runs/batch | 批量创建运行 | 🟢 |
 | POST /runs/cancel | 取消运行 | 🟢 |
-| PUT /store/items | 存储或更新条目 | 🔴 |
-| DELETE /store/items | 删除条目 | 🔴 |
-| GET /store/items | 获取条目 | 🔴 |
-| POST /store/items/search | 搜索或列出条目 | 🔴 |
-| POST /store/namespaces | 列出命名空间 | 🔴 |
+| PUT /store/items | 存储或更新条目 | 🟢 |
+| DELETE /store/items | 删除条目 | 🟢 |
+| GET /store/items | 获取条目 | 🟢 |
+| POST /store/items/search | 搜索或列出条目 | 🟢 |
+| POST /store/namespaces | 列出命名空间 | 🟢 |
 | POST /a2a/{assistant_id} | A2A协议通信 | 🔴 |
 | POST /mcp/ | MCP协议请求 | 🟢 |
 | GET /mcp/ | MCP协议流式 | 🟢 |
