@@ -1,5 +1,7 @@
 from langgraph.graph import END, START, StateGraph
+from langgraph_python.nodes.check import check
 from langgraph_python.nodes.call_model import call_model
+from langgraph_python.nodes.initialize_system_prompt import initialize_system_prompt
 from langgraph_python.states.core_agent_state import CoreAgentState, ContextSchema
 from langgraph.prebuilt import ToolNode
 from langgraph_python.tools import tools
@@ -34,10 +36,14 @@ def build_graph():
         error_handler=error_handler  # type: ignore
     )
 
+    workflow.add_node("check_user_id", check)
+    workflow.add_node("initialize_system_prompt", initialize_system_prompt)
     workflow.add_node("model", call_model)
     workflow.add_node("tools", ToolNode(tools))
 
-    workflow.add_edge(START, "model")
+    workflow.add_edge(START, "check_user_id")
+    workflow.add_edge("check_user_id", "initialize_system_prompt")
+    workflow.add_edge("initialize_system_prompt", "model")
     workflow.add_conditional_edges("model", should_continue, ["tools", END])
     workflow.add_edge("tools", "model")
     return workflow

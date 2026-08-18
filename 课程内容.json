@@ -72,7 +72,9 @@
     "运行取消",
     "多任务策略",
     "事件流",
-    "Store"
+    "Store",
+    "长期记忆",
+    "用户记忆隔离"
   ],
   "type": "录播",
   "status": "已上架",
@@ -211,6 +213,10 @@
     },
     {
       "title": "Store",
+      "showIndex": true
+    },
+    {
+      "title": "长期记忆",
       "showIndex": true
     }
   ]
