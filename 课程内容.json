@@ -75,7 +75,8 @@
     "Store",
     "长期记忆",
     "用户记忆隔离",
-    "A2A协议"
+    "A2A协议",
+    "Agent Server本地部署"
   ],
   "type": "录播",
   "status": "已上架",
@@ -222,6 +223,10 @@
     },
     {
       "title": "A2A协议",
+      "showIndex": true
+    },
+    {
+      "title": "部署",
       "showIndex": true
     }
   ]

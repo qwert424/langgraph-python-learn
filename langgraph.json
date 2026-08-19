@@ -1,9 +1,11 @@
 {
-  "dependencies": ["."],
+  "python_version": "3.13",
+  "source": {
+    "kind": "uv",
+    "root": "."
+  },
   "graphs": {
-    "agent": "langgraph_python.dev:agent",
-    "dynamic_fanout_graph": "langgraph_python.dev:dynamic_fanout_graph",
-    "cancel_demo_graph": "langgraph_python.dev:parallel_graph"
+    "agent": "langgraph_python.dev:agent"
   },
   "env": ".env"
 }
